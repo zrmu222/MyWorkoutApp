@@ -11,7 +11,8 @@ namespace myworkout.model.service.databaseService
 {
 	public class SerializationSvcImpl : IDatabaseService
 	{
-		string directory = "/Users/zacharymurphy/Projects/MyWorkout/MyWorkout/data/";
+		//string directory = "/Users/zacharymurphy/Projects/MyWorkout/MyWorkout/data/";
+        string directory = "data/";
 		string file = "userList.txt";
 
 

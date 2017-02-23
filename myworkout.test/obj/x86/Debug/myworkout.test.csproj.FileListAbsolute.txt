@@ -1,0 +1,10 @@
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\myworkout.test.exe.config
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\myworkout.test.exe
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\myworkout.test.pdb
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\MyWorkout.exe
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\nunit.framework.dll
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\MyWorkout.pdb
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\bin\Debug\nunit.framework.xml
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\obj\x86\Debug\myworkout.test.csprojResolveAssemblyReference.cache
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\obj\x86\Debug\myworkout.test.exe
+C:\Users\Zack\Documents\GitHub\MyWorkout\myworkout.test\obj\x86\Debug\myworkout.test.pdb

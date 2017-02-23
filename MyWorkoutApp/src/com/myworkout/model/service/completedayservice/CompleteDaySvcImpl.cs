@@ -25,8 +25,6 @@ namespace myworkout.model.service.completeDayService
 			{
 				throw new InvalidUserException("CompleteDaySvc : user is not valid. " + nre.Message);
 			}
-
-
 			return user; 
 		}
 

@@ -37,7 +37,7 @@
             this.ex1WeightLabel = new System.Windows.Forms.Label();
             this.ex1SetsLabel = new System.Windows.Forms.Label();
             this.ex1RepsLabel = new System.Windows.Forms.Label();
-            this.ex1LastSetReps = new System.Windows.Forms.TextBox();
+            this.ex1LastReps = new System.Windows.Forms.TextBox();
             this.ex1Weight = new System.Windows.Forms.Label();
             this.ex1Sets = new System.Windows.Forms.Label();
             this.ex1Reps = new System.Windows.Forms.Label();
@@ -63,6 +63,7 @@
             this.ex3Name = new System.Windows.Forms.Label();
             this.ex3Label = new System.Windows.Forms.Label();
             this.completeDay = new System.Windows.Forms.Button();
+            this.save = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dayLabel
@@ -159,13 +160,13 @@
             this.ex1RepsLabel.TabIndex = 8;
             this.ex1RepsLabel.Text = "Reps:";
             // 
-            // ex1LastSetReps
+            // ex1LastReps
             // 
-            this.ex1LastSetReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1LastSetReps.Location = new System.Drawing.Point(445, 116);
-            this.ex1LastSetReps.Name = "ex1LastSetReps";
-            this.ex1LastSetReps.Size = new System.Drawing.Size(51, 26);
-            this.ex1LastSetReps.TabIndex = 9;
+            this.ex1LastReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ex1LastReps.Location = new System.Drawing.Point(445, 116);
+            this.ex1LastReps.Name = "ex1LastReps";
+            this.ex1LastReps.Size = new System.Drawing.Size(51, 26);
+            this.ex1LastReps.TabIndex = 9;
             // 
             // ex1Weight
             // 
@@ -406,12 +407,24 @@
             // completeDay
             // 
             this.completeDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.completeDay.Location = new System.Drawing.Point(179, 394);
+            this.completeDay.Location = new System.Drawing.Point(88, 404);
             this.completeDay.Name = "completeDay";
             this.completeDay.Size = new System.Drawing.Size(163, 33);
             this.completeDay.TabIndex = 34;
             this.completeDay.Text = "Complete Day";
             this.completeDay.UseVisualStyleBackColor = true;
+            this.completeDay.Click += new System.EventHandler(this.completeDay_Click);
+            // 
+            // save
+            // 
+            this.save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.save.Location = new System.Drawing.Point(291, 404);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(163, 33);
+            this.save.TabIndex = 35;
+            this.save.Text = "Save";
+            this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // Form1
             // 
@@ -419,6 +432,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(527, 468);
+            this.Controls.Add(this.save);
             this.Controls.Add(this.completeDay);
             this.Controls.Add(this.ex3LastRepsLabel);
             this.Controls.Add(this.ex3Reps);
@@ -444,7 +458,7 @@
             this.Controls.Add(this.ex1Reps);
             this.Controls.Add(this.ex1Sets);
             this.Controls.Add(this.ex1Weight);
-            this.Controls.Add(this.ex1LastSetReps);
+            this.Controls.Add(this.ex1LastReps);
             this.Controls.Add(this.ex1RepsLabel);
             this.Controls.Add(this.ex1SetsLabel);
             this.Controls.Add(this.ex1WeightLabel);
@@ -456,7 +470,6 @@
             this.Controls.Add(this.dayLabel);
             this.Name = "Form1";
             this.Text = "MyWorkout";
-            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,7 +487,7 @@
         private System.Windows.Forms.Label ex1WeightLabel;
         private System.Windows.Forms.Label ex1SetsLabel;
         private System.Windows.Forms.Label ex1RepsLabel;
-        private System.Windows.Forms.TextBox ex1LastSetReps;
+        private System.Windows.Forms.TextBox ex1LastReps;
         private System.Windows.Forms.Label ex1Weight;
         private System.Windows.Forms.Label ex1Sets;
         private System.Windows.Forms.Label ex1Reps;
@@ -500,6 +513,7 @@
         private System.Windows.Forms.Label ex3Name;
         private System.Windows.Forms.Label ex3Label;
         private System.Windows.Forms.Button completeDay;
+        private System.Windows.Forms.Button save;
     }
 }
 

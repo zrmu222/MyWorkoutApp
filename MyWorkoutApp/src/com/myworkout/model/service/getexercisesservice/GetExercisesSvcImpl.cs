@@ -23,6 +23,7 @@ namespace myworkout.model.service.getExercisesService
 			{
 				this.user = user;
 				exNumbers = getIntList();
+                Console.WriteLine(exNumbers.ToString());
 				exerciseList = getList(exNumbers);
 			}
 			catch (NullReferenceException nre)
@@ -43,11 +44,11 @@ namespace myworkout.model.service.getExercisesService
 
 			foreach (Week wk in user.Weeks)
 			{
-				if (wk.WeekNumber == user.CurrentWeek)
+				if (wk.WeekOrderNumber == user.CurrentWeek)
 				{
 					foreach (Day day in wk.Days)
 					{
-						if (day.DayNumber == user.CurrentDay)
+						if (day.DayOrderNumber == user.CurrentDay)
 						{
 							intList = day.ExerciseListNumber;
 						}
