@@ -47,16 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="src\com\myworkout\view\editWeight.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="src\com\myworkout\view\editWeight.Designer.cs">
+      <DependentUpon>editWeight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\com\myworkout\view\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\com\myworkout\view\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Message.cs">
+    <Compile Include="src\com\myworkout\view\Message.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Message.Designer.cs">
+    <Compile Include="src\com\myworkout\view\Message.Designer.cs">
       <DependentUpon>Message.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -81,10 +87,13 @@
     <Compile Include="src\com\myworkout\model\service\IService.cs" />
     <Compile Include="src\com\myworkout\model\service\newUserSetupService\INewUserSetUpService.cs" />
     <Compile Include="src\com\myworkout\model\service\newUserSetupService\NewUserSvcImpl.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="src\com\myworkout\view\editWeight.resx">
+      <DependentUpon>editWeight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\com\myworkout\view\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Message.resx">
+    <EmbeddedResource Include="src\com\myworkout\view\Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

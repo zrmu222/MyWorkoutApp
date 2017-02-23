@@ -117,7 +117,7 @@ namespace myworkout.model.service.databaseService
 			FileStream fileStream = null;
 			try
 			{
-				fileStream = new FileStream(directory + file, FileMode.Open, FileAccess.Read);
+				fileStream = new FileStream(directory + file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
 				IFormatter format = new BinaryFormatter();
 				userList = format.Deserialize(fileStream) as Dictionary<int, User>;
 			}
@@ -152,7 +152,7 @@ namespace myworkout.model.service.databaseService
 			bool saved = false;
 			try
 			{
-				fileStream = new FileStream(directory + file, FileMode.Open, FileAccess.Write);
+				fileStream = new FileStream(directory + file, FileMode.Open, FileAccess.Write, FileShare.ReadWrite);
 				IFormatter format = new BinaryFormatter();
 				format.Serialize(fileStream, userList);
 				saved = true;

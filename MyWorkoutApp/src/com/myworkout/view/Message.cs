@@ -16,6 +16,7 @@ namespace MyWorkoutApp
         {
             InitializeComponent();
             messageLabel.Text = message;
+            this.Show();
         }
 
         private void okay_Click(object sender, EventArgs e)

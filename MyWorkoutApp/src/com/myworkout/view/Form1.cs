@@ -94,36 +94,50 @@ namespace MyWorkoutApp
 
         private void completeDay_Click(object sender, EventArgs e)
         {
-            int ex1Reps = Convert.ToInt32(ex1LastReps.Text);
-            int ex2Reps = Convert.ToInt32(ex2LastReps.Text);
-            int ex3Reps = Convert.ToInt32(ex3LastReps.Text);
 
-            Hashtable hashTable = new Hashtable();
-            hashTable.Add((exerciseList[0].ExerciseNumber), ex1Reps);
-            hashTable.Add((exerciseList[1].ExerciseNumber), ex2Reps);
-            hashTable.Add((exerciseList[2].ExerciseNumber), ex3Reps);
-
-            user = workoutMgr.completeDay(user, hashTable);
-            setDayWeek();
-            exerciseList = null;
-            exerciseList = workoutMgr.getExercises(user);
-            setExercises();
-            ex1LastReps.Text = "";
-            ex2LastReps.Text = "";
-            ex3LastReps.Text = "";
-            message = new Message("Successfully Completed Day");
-            message.Show();
+            if (ex1LastReps.Text != "" && ex2LastReps.Text != "" &&
+                ex3LastReps.Text != "")
+            {
+                Hashtable hashTable = new Hashtable();
+                try
+                {
+                    int ex1Reps = Convert.ToInt32(ex1LastReps.Text);
+                    int ex2Reps = Convert.ToInt32(ex2LastReps.Text);
+                    int ex3Reps = Convert.ToInt32(ex3LastReps.Text);
+                    hashTable.Add((exerciseList[0].ExerciseNumber), ex1Reps);
+                    hashTable.Add((exerciseList[1].ExerciseNumber), ex2Reps);
+                    hashTable.Add((exerciseList[2].ExerciseNumber), ex3Reps);
+                    user = workoutMgr.completeDay(user, hashTable);
+                    setDayWeek();
+                    exerciseList = null;
+                    exerciseList = workoutMgr.getExercises(user);
+                    setExercises();
+                    ex1LastReps.Text = "";
+                    ex2LastReps.Text = "";
+                    ex3LastReps.Text = "";
+                    message = new Message("Successfully Completed Day");
+                }
+                catch(Exception ex)
+                {
+                    message = new Message(ex.Message);
+                }
+            }else
+            {
+                message = new Message("Please Enter Your Last Reps");
+            }
         }
 
-        private void save_Click(object sender, EventArgs e)
+
+        private void saveUSerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             user = userMgr.saveUser(user);
             Console.WriteLine("USer: " + user.ToString());
             message = new Message("User Saved");
-            message.Show();
         }
 
-
-
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            message = new Message("Not Implemented Yet");
+        }
     }
 }
