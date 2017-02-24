@@ -139,5 +139,10 @@ namespace MyWorkoutApp
         {
             message = new Message("Not Implemented Yet");
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
