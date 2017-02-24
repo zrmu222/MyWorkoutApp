@@ -26,6 +26,8 @@ namespace MyWorkoutApp
         public Form1()
         {
             InitializeComponent();
+            nextDayButton.Hide();
+            completeDay.Show();
             getUser();
             setDayWeek();
             exerciseList = workoutMgr.getExercises(user);
@@ -107,15 +109,10 @@ namespace MyWorkoutApp
                     hashTable.Add((exerciseList[0].ExerciseNumber), ex1Reps);
                     hashTable.Add((exerciseList[1].ExerciseNumber), ex2Reps);
                     hashTable.Add((exerciseList[2].ExerciseNumber), ex3Reps);
-                    user = workoutMgr.completeDay(user, hashTable);
-                    setDayWeek();
-                    exerciseList = null;
-                    exerciseList = workoutMgr.getExercises(user);
-                    setExercises();
-                    ex1LastReps.Text = "";
-                    ex2LastReps.Text = "";
-                    ex3LastReps.Text = "";
+                    user = workoutMgr.completeDay(user, hashTable);                
                     message = new Message("Successfully Completed Day");
+                    completeDay.Hide();
+                    nextDayButton.Show();
                 }
                 catch(Exception ex)
                 {
@@ -131,7 +128,6 @@ namespace MyWorkoutApp
         private void saveUSerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             user = userMgr.saveUser(user);
-            Console.WriteLine("USer: " + user.ToString());
             message = new Message("User Saved");
         }
 
@@ -143,6 +139,25 @@ namespace MyWorkoutApp
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void nextDayButton_Click(object sender, EventArgs e)
+        {
+            message = new Message("Starting next day!");
+            setDayWeek();
+            exerciseList = null;
+            exerciseList = workoutMgr.getExercises(user);
+            setExercises();
+            ex1LastReps.Text = "";
+            ex2LastReps.Text = "";
+            ex3LastReps.Text = "";
+            completeDay.Show();
+            nextDayButton.Hide();
+        }
+
+        private void workoutInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkoutInfoForm workoutInfoForm = new WorkoutInfoForm();
         }
     }
 }

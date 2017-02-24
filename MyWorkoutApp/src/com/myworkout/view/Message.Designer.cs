@@ -34,18 +34,18 @@
             // 
             // messageLabel
             // 
-            this.messageLabel.AutoSize = true;
-            this.messageLabel.Location = new System.Drawing.Point(107, 40);
+            this.messageLabel.Location = new System.Drawing.Point(61, 40);
             this.messageLabel.MaximumSize = new System.Drawing.Size(300, 25);
             this.messageLabel.MinimumSize = new System.Drawing.Size(100, 25);
             this.messageLabel.Name = "messageLabel";
-            this.messageLabel.Size = new System.Drawing.Size(141, 25);
+            this.messageLabel.Size = new System.Drawing.Size(234, 25);
             this.messageLabel.TabIndex = 0;
             this.messageLabel.Text = "Successfully Completed Day";
+            this.messageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // okay
             // 
-            this.okay.Location = new System.Drawing.Point(138, 79);
+            this.okay.Location = new System.Drawing.Point(146, 79);
             this.okay.Name = "okay";
             this.okay.Size = new System.Drawing.Size(75, 23);
             this.okay.TabIndex = 1;
@@ -61,9 +61,9 @@
             this.Controls.Add(this.okay);
             this.Controls.Add(this.messageLabel);
             this.Name = "Message";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Message";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -87,6 +87,12 @@
     <Compile Include="src\com\myworkout\model\service\IService.cs" />
     <Compile Include="src\com\myworkout\model\service\newUserSetupService\INewUserSetUpService.cs" />
     <Compile Include="src\com\myworkout\model\service\newUserSetupService\NewUserSvcImpl.cs" />
+    <Compile Include="src\com\myworkout\view\workoutInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\com\myworkout\view\workoutInfoForm.Designer.cs">
+      <DependentUpon>workoutInfoForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="src\com\myworkout\view\editWeight.resx">
       <DependentUpon>editWeight.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +111,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="src\com\myworkout\view\workoutInfoForm.resx">
+      <DependentUpon>workoutInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

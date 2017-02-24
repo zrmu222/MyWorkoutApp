@@ -9,3 +9,4 @@ c:\users\zack\documents\visual studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\ob
 c:\users\zack\documents\visual studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Debug\MyWorkoutApp.pdb
 C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Debug\MyWorkoutApp.Message.resources
 C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Debug\MyWorkoutApp.src.com.myworkout.view.editWeight.resources
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Debug\MyWorkoutApp.WorkoutInfoForm.resources

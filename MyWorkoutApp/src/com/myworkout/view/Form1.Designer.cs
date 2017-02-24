@@ -63,12 +63,14 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveUSerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nextDayButton = new System.Windows.Forms.Button();
+            this.workoutInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,20 +80,20 @@
             // dayLabel
             // 
             this.dayLabel.AutoSize = true;
-            this.dayLabel.BackColor = System.Drawing.Color.AliceBlue;
+            this.dayLabel.BackColor = System.Drawing.Color.SteelBlue;
             this.dayLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayLabel.Location = new System.Drawing.Point(21, 45);
+            this.dayLabel.Location = new System.Drawing.Point(11, 45);
             this.dayLabel.MinimumSize = new System.Drawing.Size(60, 25);
             this.dayLabel.Name = "dayLabel";
-            this.dayLabel.Size = new System.Drawing.Size(112, 25);
+            this.dayLabel.Size = new System.Drawing.Size(177, 25);
             this.dayLabel.TabIndex = 0;
-            this.dayLabel.Text = "Day Number:";
+            this.dayLabel.Text = "Current Day Number:";
             // 
             // dayNumber
             // 
             this.dayNumber.AutoSize = true;
             this.dayNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dayNumber.Location = new System.Drawing.Point(129, 46);
+            this.dayNumber.Location = new System.Drawing.Point(182, 46);
             this.dayNumber.MaximumSize = new System.Drawing.Size(30, 20);
             this.dayNumber.MinimumSize = new System.Drawing.Size(20, 5);
             this.dayNumber.Name = "dayNumber";
@@ -101,19 +103,21 @@
             // 
             // weekLabel
             // 
+            this.weekLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.weekLabel.AutoSize = true;
             this.weekLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weekLabel.Location = new System.Drawing.Point(317, 45);
             this.weekLabel.Name = "weekLabel";
-            this.weekLabel.Size = new System.Drawing.Size(126, 20);
+            this.weekLabel.Size = new System.Drawing.Size(191, 20);
             this.weekLabel.TabIndex = 2;
-            this.weekLabel.Text = "Week Number:";
+            this.weekLabel.Text = "Current Week Number:";
             // 
             // weekNumber
             // 
+            this.weekNumber.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.weekNumber.AutoSize = true;
             this.weekNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weekNumber.Location = new System.Drawing.Point(436, 46);
+            this.weekNumber.Location = new System.Drawing.Point(502, 45);
             this.weekNumber.Name = "weekNumber";
             this.weekNumber.Size = new System.Drawing.Size(18, 20);
             this.weekNumber.TabIndex = 3;
@@ -121,19 +125,22 @@
             // 
             // ex1Name
             // 
+            this.ex1Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1Name.Location = new System.Drawing.Point(135, 25);
+            this.ex1Name.Location = new System.Drawing.Point(142, 25);
             this.ex1Name.Name = "ex1Name";
-            this.ex1Name.Size = new System.Drawing.Size(209, 24);
+            this.ex1Name.Size = new System.Drawing.Size(235, 24);
             this.ex1Name.TabIndex = 5;
             this.ex1Name.Text = "Name";
             this.ex1Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ex1WeightLabel
             // 
+            this.ex1WeightLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1WeightLabel.AutoSize = true;
             this.ex1WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex1WeightLabel.Location = new System.Drawing.Point(6, 58);
+            this.ex1WeightLabel.Margin = new System.Windows.Forms.Padding(3, 0, 1, 0);
             this.ex1WeightLabel.Name = "ex1WeightLabel";
             this.ex1WeightLabel.Size = new System.Drawing.Size(70, 20);
             this.ex1WeightLabel.TabIndex = 6;
@@ -141,9 +148,10 @@
             // 
             // ex1SetsLabel
             // 
+            this.ex1SetsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1SetsLabel.AutoSize = true;
             this.ex1SetsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1SetsLabel.Location = new System.Drawing.Point(117, 58);
+            this.ex1SetsLabel.Location = new System.Drawing.Point(138, 60);
             this.ex1SetsLabel.Name = "ex1SetsLabel";
             this.ex1SetsLabel.Size = new System.Drawing.Size(51, 20);
             this.ex1SetsLabel.TabIndex = 7;
@@ -151,9 +159,10 @@
             // 
             // ex1RepsLabel
             // 
+            this.ex1RepsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1RepsLabel.AutoSize = true;
             this.ex1RepsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1RepsLabel.Location = new System.Drawing.Point(208, 58);
+            this.ex1RepsLabel.Location = new System.Drawing.Point(228, 58);
             this.ex1RepsLabel.Name = "ex1RepsLabel";
             this.ex1RepsLabel.Size = new System.Drawing.Size(56, 20);
             this.ex1RepsLabel.TabIndex = 8;
@@ -161,6 +170,7 @@
             // 
             // ex1LastReps
             // 
+            this.ex1LastReps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1LastReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex1LastReps.Location = new System.Drawing.Point(449, 55);
             this.ex1LastReps.Name = "ex1LastReps";
@@ -169,19 +179,22 @@
             // 
             // ex1Weight
             // 
+            this.ex1Weight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1Weight.AutoSize = true;
             this.ex1Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1Weight.Location = new System.Drawing.Point(74, 59);
+            this.ex1Weight.Location = new System.Drawing.Point(74, 58);
             this.ex1Weight.Name = "ex1Weight";
-            this.ex1Weight.Size = new System.Drawing.Size(18, 20);
+            this.ex1Weight.Size = new System.Drawing.Size(49, 20);
             this.ex1Weight.TabIndex = 10;
-            this.ex1Weight.Text = "0";
+            this.ex1Weight.Text = "150.5";
+            this.ex1Weight.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // ex1Sets
             // 
+            this.ex1Sets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1Sets.AutoSize = true;
             this.ex1Sets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1Sets.Location = new System.Drawing.Point(164, 59);
+            this.ex1Sets.Location = new System.Drawing.Point(186, 60);
             this.ex1Sets.Name = "ex1Sets";
             this.ex1Sets.Size = new System.Drawing.Size(18, 20);
             this.ex1Sets.TabIndex = 11;
@@ -189,9 +202,10 @@
             // 
             // ex1Reps
             // 
+            this.ex1Reps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1Reps.AutoSize = true;
             this.ex1Reps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex1Reps.Location = new System.Drawing.Point(263, 58);
+            this.ex1Reps.Location = new System.Drawing.Point(282, 58);
             this.ex1Reps.Name = "ex1Reps";
             this.ex1Reps.Size = new System.Drawing.Size(18, 20);
             this.ex1Reps.TabIndex = 12;
@@ -199,6 +213,7 @@
             // 
             // ex1LastRepsLabel
             // 
+            this.ex1LastRepsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex1LastRepsLabel.AutoSize = true;
             this.ex1LastRepsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex1LastRepsLabel.Location = new System.Drawing.Point(318, 58);
@@ -209,6 +224,7 @@
             // 
             // ex2LastRepsLabel
             // 
+            this.ex2LastRepsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2LastRepsLabel.AutoSize = true;
             this.ex2LastRepsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex2LastRepsLabel.Location = new System.Drawing.Point(318, 61);
@@ -219,9 +235,10 @@
             // 
             // ex2Reps
             // 
+            this.ex2Reps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2Reps.AutoSize = true;
             this.ex2Reps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex2Reps.Location = new System.Drawing.Point(264, 60);
+            this.ex2Reps.Location = new System.Drawing.Point(282, 60);
             this.ex2Reps.Name = "ex2Reps";
             this.ex2Reps.Size = new System.Drawing.Size(18, 20);
             this.ex2Reps.TabIndex = 22;
@@ -229,9 +246,10 @@
             // 
             // ex2Sets
             // 
+            this.ex2Sets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2Sets.AutoSize = true;
             this.ex2Sets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex2Sets.Location = new System.Drawing.Point(164, 61);
+            this.ex2Sets.Location = new System.Drawing.Point(186, 61);
             this.ex2Sets.Name = "ex2Sets";
             this.ex2Sets.Size = new System.Drawing.Size(18, 20);
             this.ex2Sets.TabIndex = 21;
@@ -239,9 +257,10 @@
             // 
             // ex2Weight
             // 
+            this.ex2Weight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2Weight.AutoSize = true;
             this.ex2Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex2Weight.Location = new System.Drawing.Point(74, 61);
+            this.ex2Weight.Location = new System.Drawing.Point(74, 60);
             this.ex2Weight.Name = "ex2Weight";
             this.ex2Weight.Size = new System.Drawing.Size(18, 20);
             this.ex2Weight.TabIndex = 20;
@@ -249,6 +268,7 @@
             // 
             // ex2LastReps
             // 
+            this.ex2LastReps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2LastReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex2LastReps.Location = new System.Drawing.Point(449, 57);
             this.ex2LastReps.Name = "ex2LastReps";
@@ -257,9 +277,10 @@
             // 
             // ex2RepsLabel
             // 
+            this.ex2RepsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2RepsLabel.AutoSize = true;
             this.ex2RepsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex2RepsLabel.Location = new System.Drawing.Point(208, 60);
+            this.ex2RepsLabel.Location = new System.Drawing.Point(228, 60);
             this.ex2RepsLabel.Name = "ex2RepsLabel";
             this.ex2RepsLabel.Size = new System.Drawing.Size(56, 20);
             this.ex2RepsLabel.TabIndex = 18;
@@ -267,9 +288,10 @@
             // 
             // ex2SetsLabel
             // 
+            this.ex2SetsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2SetsLabel.AutoSize = true;
             this.ex2SetsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex2SetsLabel.Location = new System.Drawing.Point(117, 61);
+            this.ex2SetsLabel.Location = new System.Drawing.Point(138, 63);
             this.ex2SetsLabel.Name = "ex2SetsLabel";
             this.ex2SetsLabel.Size = new System.Drawing.Size(51, 20);
             this.ex2SetsLabel.TabIndex = 17;
@@ -277,6 +299,7 @@
             // 
             // ex2WeightLabel
             // 
+            this.ex2WeightLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2WeightLabel.AutoSize = true;
             this.ex2WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex2WeightLabel.Location = new System.Drawing.Point(6, 60);
@@ -287,16 +310,18 @@
             // 
             // ex2Name
             // 
+            this.ex2Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex2Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex2Name.Location = new System.Drawing.Point(139, 25);
+            this.ex2Name.Location = new System.Drawing.Point(142, 25);
             this.ex2Name.Name = "ex2Name";
-            this.ex2Name.Size = new System.Drawing.Size(205, 25);
+            this.ex2Name.Size = new System.Drawing.Size(235, 24);
             this.ex2Name.TabIndex = 15;
             this.ex2Name.Text = "Name";
             this.ex2Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ex3LastRepsLabel
             // 
+            this.ex3LastRepsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3LastRepsLabel.AutoSize = true;
             this.ex3LastRepsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex3LastRepsLabel.Location = new System.Drawing.Point(318, 57);
@@ -307,9 +332,10 @@
             // 
             // ex3Reps
             // 
+            this.ex3Reps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3Reps.AutoSize = true;
             this.ex3Reps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex3Reps.Location = new System.Drawing.Point(263, 57);
+            this.ex3Reps.Location = new System.Drawing.Point(282, 57);
             this.ex3Reps.Name = "ex3Reps";
             this.ex3Reps.Size = new System.Drawing.Size(18, 20);
             this.ex3Reps.TabIndex = 32;
@@ -317,9 +343,10 @@
             // 
             // ex3Sets
             // 
+            this.ex3Sets.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3Sets.AutoSize = true;
             this.ex3Sets.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex3Sets.Location = new System.Drawing.Point(164, 58);
+            this.ex3Sets.Location = new System.Drawing.Point(186, 58);
             this.ex3Sets.Name = "ex3Sets";
             this.ex3Sets.Size = new System.Drawing.Size(18, 20);
             this.ex3Sets.TabIndex = 31;
@@ -327,9 +354,10 @@
             // 
             // ex3Weight
             // 
+            this.ex3Weight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3Weight.AutoSize = true;
             this.ex3Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex3Weight.Location = new System.Drawing.Point(74, 57);
+            this.ex3Weight.Location = new System.Drawing.Point(74, 58);
             this.ex3Weight.Name = "ex3Weight";
             this.ex3Weight.Size = new System.Drawing.Size(18, 20);
             this.ex3Weight.TabIndex = 30;
@@ -337,6 +365,7 @@
             // 
             // ex3LastReps
             // 
+            this.ex3LastReps.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3LastReps.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex3LastReps.Location = new System.Drawing.Point(449, 54);
             this.ex3LastReps.Name = "ex3LastReps";
@@ -345,9 +374,10 @@
             // 
             // ex3RepsLabel
             // 
+            this.ex3RepsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3RepsLabel.AutoSize = true;
             this.ex3RepsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex3RepsLabel.Location = new System.Drawing.Point(208, 58);
+            this.ex3RepsLabel.Location = new System.Drawing.Point(228, 58);
             this.ex3RepsLabel.Name = "ex3RepsLabel";
             this.ex3RepsLabel.Size = new System.Drawing.Size(56, 20);
             this.ex3RepsLabel.TabIndex = 28;
@@ -355,9 +385,10 @@
             // 
             // ex3SetsLabel
             // 
+            this.ex3SetsLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3SetsLabel.AutoSize = true;
             this.ex3SetsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex3SetsLabel.Location = new System.Drawing.Point(117, 58);
+            this.ex3SetsLabel.Location = new System.Drawing.Point(138, 58);
             this.ex3SetsLabel.Name = "ex3SetsLabel";
             this.ex3SetsLabel.Size = new System.Drawing.Size(51, 20);
             this.ex3SetsLabel.TabIndex = 27;
@@ -365,6 +396,7 @@
             // 
             // ex3WeightLabel
             // 
+            this.ex3WeightLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3WeightLabel.AutoSize = true;
             this.ex3WeightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ex3WeightLabel.Location = new System.Drawing.Point(6, 58);
@@ -375,16 +407,18 @@
             // 
             // ex3Name
             // 
+            this.ex3Name.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ex3Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ex3Name.Location = new System.Drawing.Point(143, 25);
+            this.ex3Name.Location = new System.Drawing.Point(142, 25);
             this.ex3Name.Name = "ex3Name";
-            this.ex3Name.Size = new System.Drawing.Size(201, 25);
+            this.ex3Name.Size = new System.Drawing.Size(235, 24);
             this.ex3Name.TabIndex = 25;
             this.ex3Name.Text = "Name";
             this.ex3Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // completeDay
             // 
+            this.completeDay.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.completeDay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.completeDay.Location = new System.Drawing.Point(181, 441);
             this.completeDay.Name = "completeDay";
@@ -396,7 +430,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Gray;
+            this.menuStrip1.BackColor = System.Drawing.Color.SlateGray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.userToolStripMenuItem});
@@ -411,17 +445,28 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.saveUSerToolStripMenuItem,
+            this.workoutInfoToolStripMenuItem,
             this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // saveUSerToolStripMenuItem
             // 
+            this.saveUSerToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
             this.saveUSerToolStripMenuItem.Name = "saveUSerToolStripMenuItem";
             this.saveUSerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.saveUSerToolStripMenuItem.Text = "Save User";
             this.saveUSerToolStripMenuItem.Click += new System.EventHandler(this.saveUSerToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem
             // 
@@ -433,6 +478,7 @@
             // 
             // editToolStripMenuItem
             // 
+            this.editToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.editToolStripMenuItem.Text = "Exercise Weight";
@@ -440,7 +486,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.SkyBlue;
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.BackColor = System.Drawing.Color.Wheat;
             this.groupBox1.Controls.Add(this.ex1Name);
             this.groupBox1.Controls.Add(this.ex1WeightLabel);
             this.groupBox1.Controls.Add(this.ex1SetsLabel);
@@ -460,7 +508,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.AutoSize = true;
+            this.groupBox2.BackColor = System.Drawing.Color.Wheat;
             this.groupBox2.Controls.Add(this.ex2Name);
             this.groupBox2.Controls.Add(this.ex2WeightLabel);
             this.groupBox2.Controls.Add(this.ex2SetsLabel);
@@ -471,7 +521,7 @@
             this.groupBox2.Controls.Add(this.ex2Reps);
             this.groupBox2.Controls.Add(this.ex2LastRepsLabel);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(15, 191);
+            this.groupBox2.Location = new System.Drawing.Point(15, 195);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(515, 100);
             this.groupBox2.TabIndex = 38;
@@ -480,7 +530,9 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.SteelBlue;
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.AutoSize = true;
+            this.groupBox3.BackColor = System.Drawing.Color.Wheat;
             this.groupBox3.Controls.Add(this.ex3Name);
             this.groupBox3.Controls.Add(this.ex3WeightLabel);
             this.groupBox3.Controls.Add(this.ex3LastRepsLabel);
@@ -498,18 +550,31 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Exercise 3";
             // 
-            // exitToolStripMenuItem
+            // nextDayButton
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.nextDayButton.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.nextDayButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextDayButton.Location = new System.Drawing.Point(181, 441);
+            this.nextDayButton.Name = "nextDayButton";
+            this.nextDayButton.Size = new System.Drawing.Size(163, 33);
+            this.nextDayButton.TabIndex = 40;
+            this.nextDayButton.Text = "Start Next Day";
+            this.nextDayButton.UseVisualStyleBackColor = true;
+            this.nextDayButton.Click += new System.EventHandler(this.nextDayButton_Click);
+            // 
+            // workoutInfoToolStripMenuItem
+            // 
+            this.workoutInfoToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
+            this.workoutInfoToolStripMenuItem.Name = "workoutInfoToolStripMenuItem";
+            this.workoutInfoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.workoutInfoToolStripMenuItem.Text = "Workout Info";
+            this.workoutInfoToolStripMenuItem.Click += new System.EventHandler(this.workoutInfoToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.AliceBlue;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(549, 491);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox3);
@@ -520,6 +585,7 @@
             this.Controls.Add(this.weekLabel);
             this.Controls.Add(this.dayNumber);
             this.Controls.Add(this.dayLabel);
+            this.Controls.Add(this.nextDayButton);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "MyWorkout";
@@ -580,6 +646,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button nextDayButton;
+        private System.Windows.Forms.ToolStripMenuItem workoutInfoToolStripMenuItem;
     }
 }
 

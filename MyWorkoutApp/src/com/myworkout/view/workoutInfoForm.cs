@@ -10,19 +10,24 @@ using System.Windows.Forms;
 
 namespace MyWorkoutApp
 {
-    public partial class Message : Form
+    public partial class WorkoutInfoForm : Form
     {
-        public Message(string message)
+        public WorkoutInfoForm()
         {
             InitializeComponent();
-            messageLabel.Text = message;
+            headerLabel.Select();
             this.Show();
         }
 
-        private void okay_Click(object sender, EventArgs e)
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private void headerLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
