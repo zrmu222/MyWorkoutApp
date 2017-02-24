@@ -1,0 +1,9 @@
+﻿<Properties StartupConfiguration="{3B34340D-5050-4B7E-8A16-B220530A9D17}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MyWorkoutApp PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>

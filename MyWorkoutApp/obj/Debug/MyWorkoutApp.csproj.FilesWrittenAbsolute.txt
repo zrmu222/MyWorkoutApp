@@ -1,0 +1,13 @@
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/.NETFramework,Version=v4.5.2.AssemblyAttribute.cs
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.src.com.myworkout.view.editWeight.resources
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.Form1.resources
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.Message.resources
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.Properties.Resources.resources
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.WorkoutInfoForm.resources
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/bin/Debug/MyWorkoutApp.exe.config
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/bin/Debug/MyWorkoutApp.exe.mdb
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/bin/Debug/MyWorkoutApp.pdb
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/bin/Debug/MyWorkoutApp.exe
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.exe
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.exe.mdb
+/Users/zacharymurphy/Projects/MyWorkoutApp/MyWorkoutApp/obj/Debug/MyWorkoutApp.pdb
