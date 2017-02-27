@@ -138,7 +138,7 @@ namespace MyWorkoutApp
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            System.Windows.Forms.Application.Exit();
         }
 
         private void nextDayButton_Click(object sender, EventArgs e)

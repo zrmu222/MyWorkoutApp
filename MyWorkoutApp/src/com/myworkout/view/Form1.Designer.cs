@@ -63,6 +63,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveUSerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workoutInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,7 +71,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.nextDayButton = new System.Windows.Forms.Button();
-            this.workoutInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -457,15 +457,23 @@
             this.saveUSerToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
             this.saveUSerToolStripMenuItem.Name = "saveUSerToolStripMenuItem";
             this.saveUSerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.saveUSerToolStripMenuItem.Text = "Save User";
+            this.saveUSerToolStripMenuItem.Text = "&Save User";
             this.saveUSerToolStripMenuItem.Click += new System.EventHandler(this.saveUSerToolStripMenuItem_Click);
+            // 
+            // workoutInfoToolStripMenuItem
+            // 
+            this.workoutInfoToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
+            this.workoutInfoToolStripMenuItem.Name = "workoutInfoToolStripMenuItem";
+            this.workoutInfoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.workoutInfoToolStripMenuItem.Text = "Workout Info";
+            this.workoutInfoToolStripMenuItem.Click += new System.EventHandler(this.workoutInfoToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // userToolStripMenuItem
@@ -561,14 +569,6 @@
             this.nextDayButton.Text = "Start Next Day";
             this.nextDayButton.UseVisualStyleBackColor = true;
             this.nextDayButton.Click += new System.EventHandler(this.nextDayButton_Click);
-            // 
-            // workoutInfoToolStripMenuItem
-            // 
-            this.workoutInfoToolStripMenuItem.BackColor = System.Drawing.Color.SlateGray;
-            this.workoutInfoToolStripMenuItem.Name = "workoutInfoToolStripMenuItem";
-            this.workoutInfoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.workoutInfoToolStripMenuItem.Text = "Workout Info";
-            this.workoutInfoToolStripMenuItem.Click += new System.EventHandler(this.workoutInfoToolStripMenuItem_Click);
             // 
             // Form1
             // 
