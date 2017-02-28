@@ -79,17 +79,17 @@ namespace MyWorkoutApp
             }
 
             ex1Name.Text = ex1.Name;
-            ex1Weight.Text = ex1.Weight.ToString();
+            ex1Weight.Text = ex1.Weight.ToString() + " lbs";
             ex1Sets.Text = ex1.Sets.ToString();
             ex1Reps.Text = ex1.Reps.ToString();
 
             ex2Name.Text = ex2.Name;
-            ex2Weight.Text = ex2.Weight.ToString();
+            ex2Weight.Text = ex2.Weight.ToString() + " lbs";
             ex2Sets.Text = ex2.Sets.ToString();
             ex2Reps.Text = ex2.Reps.ToString();
 
             ex3Name.Text = ex3.Name;
-            ex3Weight.Text = ex3.Weight.ToString();
+            ex3Weight.Text = ex3.Weight.ToString() + " lbs";
             ex3Sets.Text = ex3.Sets.ToString();
             ex3Reps.Text = ex3.Reps.ToString();
         }
