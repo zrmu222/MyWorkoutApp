@@ -1,0 +1,10 @@
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\MyWorkoutApp.Test.exe.config
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\MyWorkoutApp.Test.exe
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\MyWorkoutApp.Test.pdb
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\MyWorkoutApp.exe
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\nunit.framework.dll
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\MyWorkoutApp.pdb
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\bin\Release\nunit.framework.xml
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\obj\Release\MyWorkoutApp.Test.csprojResolveAssemblyReference.cache
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\obj\Release\MyWorkoutApp.Test.exe
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp.Test\obj\Release\MyWorkoutApp.Test.pdb

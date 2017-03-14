@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWorkoutApp", "MyWorkoutAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWorkoutApp.Test", "MyWorkoutApp.Test\MyWorkoutApp.Test.csproj", "{DE4A131E-A5F4-4511-BD8B-6122190CDE6A}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{7886AA8B-ED3F-4DD8-AF22-E47FC2C095F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,9 @@ Global
 		{DE4A131E-A5F4-4511-BD8B-6122190CDE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE4A131E-A5F4-4511-BD8B-6122190CDE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE4A131E-A5F4-4511-BD8B-6122190CDE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4A131E-A5F4-4511-BD8B-6122190CDE6A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7886AA8B-ED3F-4DD8-AF22-E47FC2C095F8}.Debug|Any CPU.ActiveCfg = Debug
+		{7886AA8B-ED3F-4DD8-AF22-E47FC2C095F8}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

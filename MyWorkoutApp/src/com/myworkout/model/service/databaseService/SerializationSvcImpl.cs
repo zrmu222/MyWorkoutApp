@@ -92,10 +92,11 @@ namespace myworkout.model.service.databaseService
 			return user;
 		}//End of saveUser
 
-
+       
 
 		private Dictionary<int, User> getUserList()
 		{
+            /*
 			if (!Directory.Exists(directory))
 			{
 				Directory.CreateDirectory(directory);
@@ -111,13 +112,14 @@ namespace myworkout.model.service.databaseService
 				saveUserList(userList1);
 			}
 
+             */
 
 
 			Dictionary<int, User> userList = null;
 			FileStream fileStream = null;
 			try
 			{
-				fileStream = new FileStream(directory + file, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+				fileStream = new FileStream(directory + file, FileMode.OpenOrCreate, FileAccess.Read, FileShare.ReadWrite);
 				IFormatter format = new BinaryFormatter();
 				userList = format.Deserialize(fileStream) as Dictionary<int, User>;
 			}
@@ -152,7 +154,7 @@ namespace myworkout.model.service.databaseService
 			bool saved = false;
 			try
 			{
-				fileStream = new FileStream(directory + file, FileMode.Open, FileAccess.Write, FileShare.ReadWrite);
+				fileStream = new FileStream(directory + file, FileMode.OpenOrCreate, FileAccess.Write, FileShare.ReadWrite);
 				IFormatter format = new BinaryFormatter();
 				format.Serialize(fileStream, userList);
 				saved = true;

@@ -1,0 +1,11 @@
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\bin\Release\MyWorkoutApp.exe.config
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\bin\Release\MyWorkoutApp.exe
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\bin\Release\MyWorkoutApp.pdb
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.src.com.myworkout.view.editWeight.resources
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.Form1.resources
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.Message.resources
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.Properties.Resources.resources
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.WorkoutInfoForm.resources
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.csproj.GenerateResource.Cache
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.exe
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.pdb

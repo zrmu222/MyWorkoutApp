@@ -127,8 +127,17 @@ namespace MyWorkoutApp
 
         private void saveUSerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            user = userMgr.saveUser(user);
-            message = new Message("User Saved");
+            User user1 = userMgr.saveUser(user);
+            if (user1 != null)
+            {
+                user = user1;
+                message = new Message("User Saved");
+            }
+            else
+            {
+                message = new Message("Unable to save user.");
+            }
+            
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
