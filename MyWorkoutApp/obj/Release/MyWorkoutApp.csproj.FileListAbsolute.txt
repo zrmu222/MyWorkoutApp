@@ -9,3 +9,4 @@ C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\ob
 C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.csproj.GenerateResource.Cache
 C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.exe
 C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.pdb
+C:\Users\Zack\Documents\Visual Studio 2015\Projects\MyWorkoutApp\MyWorkoutApp\obj\Release\MyWorkoutApp.csprojResolveAssemblyReference.cache
